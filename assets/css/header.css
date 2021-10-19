@@ -1,0 +1,57 @@
+.header{
+    width: 650px;
+    padding: 40px;
+}
+
+.header h1{
+    font-size: 2.8rem;
+}
+
+.header p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+#logotipo{
+    color: dodgerblue;
+}
+
+#nova-tarefa{
+    background-color: dodgerblue;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#nova-tarefa:hover{
+    background-color: white;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    transform: scale(1.1);
+}
+
+textarea{
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 16pt;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.172);
+}
+
+textarea:focus{
+    border-color: dodgerblue;
+}
