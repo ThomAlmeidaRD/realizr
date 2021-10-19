@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Re.align</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-content">
+
+            <div class="header">
+                <h1 id="title">
+                    <b id="logotipo">Re</b>.align
+                </h1>
+                <p>
+                    Tome vergonha na cara e deixe de ser preguiçoso, conclua tarefas e suba de elo 🏆, escreva o nome da
+                    sua tarefa e clique em <b>+
+                        adicionar</b> para criar uma nova tarefa.
+                </p>
+
+                <textarea name="" id="textbox" cols="40" rows="5"></textarea>
+                <br>
+
+                <button id="nova-tarefa" onclick="createTask()">
+                    + adicionar
+                </button>
+
+            </div>
+
+            <div class="task-area">
+                <div>
+                    <h2>Minhas Tarefas <b id="contador">0</b></h2>
+
+                    <br>
+
+                    <ul id="task-list">
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="assets/js/create-task.js"></script>
+
+</html>
