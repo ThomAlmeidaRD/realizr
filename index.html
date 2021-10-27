@@ -6,44 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/uicons-regular-rounded.css">
     <title>Re.align</title>
 </head>
 
 <body>
 
+    <nav class="notify" id="notify">
+        <b id="notify-text">Text Test</b>
+        <img id="close-notify" src="assets/svg/fi-rr-cross-small.svg" alt="">
+    </nav>
+
     <div class="container">
         <div class="container-content">
 
-            <div class="header">
-                <h1 id="title">
-                    <b id="logotipo">Re</b>.align
-                </h1>
-                <p>
-                    Tome vergonha na cara e deixe de ser preguiçoso, conclua tarefas e suba de elo 🏆, escreva o nome da
-                    sua tarefa e clique em <b>+
-                        adicionar</b> para criar uma nova tarefa.
-                </p>
+            <div class="app">
 
-                <textarea name="" id="textbox" cols="40" rows="5"></textarea>
-                <br>
+                <div class="header">
+                    <h1 id="title">
+                        <b id="logotipo">Re</b>.align
+                    </h1>
+                    <p>
+                        Tome vergonha na cara e deixe de ser preguiçoso, conclua tarefas e suba de elo 🏆, escreva o
+                        nome da
+                        sua tarefa e clique em <b>+
+                            adicionar</b> para criar uma nova tarefa.
+                    </p>
 
-                <button id="nova-tarefa" onclick="createTask()">
-                    + adicionar
-                </button>
-
-            </div>
-
-            <div class="task-area">
-                <div>
-                    <h2>Minhas Tarefas <b id="contador">0</b></h2>
-
+                    <textarea name="" id="textbox" cols="30" rows="5"></textarea>
                     <br>
 
-                    <ul id="task-list">
+                    <button id="nova-tarefa" onclick="createTask()">
+                        + adicionar
+                    </button>
 
-                    </ul>
+                    <section class="level-area">
+                        <section class="user-title">
+                            <b id="my-level">0</b>
+                            <h2>Usuario</h2>
+                        </section>
+                        <p>Tarefas concluidas</p>
+
+                        <div id="level-cap">
+                            <div id="level-progress"></div>
+                        </div>
+
+
+                    </section>
 
                 </div>
+
+                <div class="task-area">
+                    <div>
+                        <h2>Minhas Tarefas <b id="contador">0</b></h2>
+
+                        <br>
+
+                        <ul id="task-list">
+
+                        </ul>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -52,5 +77,6 @@
 </body>
 
 <script src="assets/js/create-task.js"></script>
+<script src="assets/js/level.js"></script>
 
 </html>

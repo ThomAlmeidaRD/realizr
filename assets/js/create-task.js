@@ -10,6 +10,11 @@ var task_list = document.getElementById('task-list')
 var contador = document.getElementById('contador')
 var contador_Tasks = 1
 
+//notificações
+var notifyText = document.getElementById('notify-text')
+var closeNotify = document.getElementById('close-notify')
+var notify = document.getElementById('notify')
+
 function createTask() {
 
     if (textbox.value == '') {
@@ -56,8 +61,19 @@ function createTask() {
 
         // Estado da tarefa
 
-        newH3.addEventListener('click', function () {
+        //Excluindo tarefa
+
+        newH3.addEventListener('dblclick', function(){
             newLI.style.display = 'none'
+
+            //notificando
+            notify.style.display = 'flex'
+            notifyText.innerText = 'Tarefa Deletada'
+
+            closeNotify.addEventListener('click', function(){
+                notify.style.display = 'none'
+            })
+
         })
 
         newP.addEventListener('click', function () {
@@ -67,7 +83,10 @@ function createTask() {
 
         newP.addEventListener('dblclick', function () {
             newP.innerText = '😎 Pronto'
+            //newH3.style.textDecoration = 'line-through'
+            newH3.style.color = '#3333'
             newP.style.backgroundColor = '#763bf5'
+            newLI.style.borderColor = '#763bf5'
         })
 
     }

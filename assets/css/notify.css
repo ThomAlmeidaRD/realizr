@@ -1,0 +1,25 @@
+.notify {
+    display: flex;
+    display: none;
+    justify-content: center;
+    background-color: #763bf5;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+#close-notify{
+    padding-left: 20px;
+}
+
+#close-notify:hover {
+    cursor: pointer;
+}
+
+.notify img{
+    width: 20px;
+    padding: 0;
+
+}

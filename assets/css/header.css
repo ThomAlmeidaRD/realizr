@@ -13,11 +13,11 @@
 }
 
 #logotipo{
-    color: dodgerblue;
+    color: #763bf5;
 }
 
 #nova-tarefa{
-    background-color: dodgerblue;
+    background-color: #763bf5;
     border: none;
     padding: 12px;
     margin-top: 10px;
@@ -34,8 +34,8 @@
 
 #nova-tarefa:hover{
     background-color: white;
-    border: 1px solid dodgerblue;
-    color: dodgerblue;
+    border: 1px solid #763bf5;
+    color: #763bf5;
     transform: scale(1.1);
 }
 
@@ -53,5 +53,5 @@ textarea{
 }
 
 textarea:focus{
-    border-color: dodgerblue;
+    border-color: #763bf5;
 }

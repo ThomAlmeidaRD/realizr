@@ -1,0 +1,43 @@
+
+.user-title{
+    display: flex;
+}
+
+.level-area{
+    border: 1px solid #3333;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#level-cap{
+    background-color: lightgray;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#level-progress{
+    background-color: #763bf5;
+    width: 0%;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#my-level{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.level-area h2{
+    font-size: 1.8rem;
+    color: #763bf5;
+    margin-left: 5px;
+}
+
+.level-area p{
+    font-size: 1.2rem;
+}
