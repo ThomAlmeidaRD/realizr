@@ -59,35 +59,40 @@ function createTask() {
         //Contador de tarefas criadas
         contador.innerText = contador_Tasks++
 
-        // Estado da tarefa
+            // Estado da tarefa
 
-        //Excluindo tarefa
+            //Excluindo tarefa
 
-        newH3.addEventListener('dblclick', function(){
-            newLI.style.display = 'none'
+            newH3.addEventListener('dblclick', function() {
+                newLI.style.display = 'none'
 
-            //notificando
-            notify.style.display = 'flex'
-            notifyText.innerText = 'Tarefa Deletada'
+                //notificando
+                notify.style.display = 'flex'
+                notifyText.innerText = 'Tarefa Deletada'
 
-            closeNotify.addEventListener('click', function(){
-                notify.style.display = 'none'
+                closeNotify.addEventListener('click', function() {
+                    notify.style.display = 'none'
+                })
+
             })
 
-        })
-
-        newP.addEventListener('click', function () {
+        newP.addEventListener('click', function() {
             newP.innerText = '😉 Fazendo'
             newP.style.backgroundColor = '#08b329'
         })
 
-        newP.addEventListener('dblclick', function () {
+        newP.addEventListener('dblclick', function() {
             newP.innerText = '😎 Pronto'
-            //newH3.style.textDecoration = 'line-through'
+                //newH3.style.textDecoration = 'line-through'
             newH3.style.color = '#3333'
             newP.style.backgroundColor = '#763bf5'
             newLI.style.borderColor = '#763bf5'
         })
+
+        xp++
+        console.log("XP: " + xp)
+
+        levelUp()
 
     }
 
